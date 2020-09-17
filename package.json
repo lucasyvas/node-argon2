@@ -19,11 +19,12 @@
     "argon2/src/opt.c",
     "argon2/src/ref.c",
     "argon2/src/thread.c",
-    "argon2/src/thread.h"
+    "argon2/src/thread.h",
+    "install.sh"
   ],
   "types": "argon2.d.ts",
   "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build",
+    "install": "bash install.sh",
     "lint": "standard --verbose",
     "test": "nyc mocha test/test.js",
     "test:ts": "tsc -p . && node test/test-d.js",
